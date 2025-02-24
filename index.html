@@ -13,8 +13,13 @@
         <div class="left-container">
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="logo-container">
-                <input type="file" id="logoUpload" class="hidden">
-                <label for="logoUpload" class="logo">PREKONNECT ANGEL</label>
+                <!-- File Upload Input -->
+                <input type="file" id="logoUpload" class="hidden" accept="image/*" onchange="displayLogo(event)">
+                
+                <!-- Logo Display Area -->
+                <label for="logoUpload" class="logo">
+                    <img id="uploadedLogo" src="WhatsApp Image 2025-02-23 at 6.51.51 PM.jpeg" alt="PREKONNECT ANGEL" class="logo-img">
+                </label>
             </div>
         </div>
 
@@ -29,7 +34,7 @@
     </header>
     <section class="hero">
         <!-- Background Image via HTML -->
-        <img src="images (1).jpeg" alt="Background Image" class="hero-bg">
+        <img src="download.jpeg" alt="Background Image" class="hero-bg">
         
         <div class="hero-content">
             <h1>Invest in the Future. Own Tomorrow’s Market Leaders Today.</h1>
@@ -148,8 +153,11 @@
             </ul>
         </div>
 
+        <!-- PreKonnect Logo (Clickable) -->
         <div class="footer-center">
-            <h2 class="home-btn">PreKonnect</h2>
+            <a href="index.html">
+                <img src="WhatsApp Image 2025-02-23 at 6.51.51 PM.jpeg" alt="PreKonnect Logo" class="footer-logo">
+            </a>
         </div>
 
         <div class="footer-right">
@@ -163,11 +171,10 @@
 
     <div class="footer-bottom">
         <p>PreKonnectAngel @2025 © Copyright All Rights Reserved</p>
-        <p>Developed by <strong>DXLabs</strong></p>
+        <p>Developed by <strong>DUXLabs</strong></p>
     </div>
     
     <div class="powered-by">
         <p>Powered by <strong>FacultyPaths</strong></p>
     </div>
 </footer>
-
